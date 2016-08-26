@@ -1,5 +1,6 @@
 var exampleData = {
-    message: 'Hello, friend!'
+    message: 'Hello, friend!',
+    name: 'joe'
 };
 
 window.onload = function() {
@@ -13,6 +14,9 @@ window.onload = function() {
 
     new Vue({
         el: '#app',
-        data: exampleData
+        data: exampleData,
+        created: function() {
+            console.log('The message is:', this.message)
+        }
     })
 };
