@@ -9,9 +9,14 @@ window.onload = function() {
     var HeaderComponent = Vue.extend({
         template: '<div>This is the Header</div>'
     })
+    
+    var FooterComponent = Vue.extend({
+        template: '<div>This is the Footer</div>'
+    })
 
 // register
-    Vue.component('header-component', HeaderComponent)
+    Vue.component('header-component', HeaderComponent);
+    Vue.component('footer-component', FooterComponent);
 
     new Vue({
         el: '#app',
