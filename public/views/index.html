@@ -17,9 +17,11 @@
 <div id="app">
 
     <header-component></header-component>
-    <p>{{ message }}</p>
-    <span>This will never change {{* message}}</span>
+    <p v-if="active">{{ message }}</p>
+    <span v-if="!active">This will never change {{* message}}</span>
     <span>Captain's name: {{ name | capitalize}}</span>
+
+    <button v-on:click="message='Go Away'">Click Me</button>
 
 </div>
 

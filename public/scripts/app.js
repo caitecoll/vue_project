@@ -1,6 +1,7 @@
 var exampleData = {
     message: 'Hello, friend!',
-    name: 'joe'
+    name: 'joe',
+    active: true
 };
 
 window.onload = function() {
