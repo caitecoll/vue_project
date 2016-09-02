@@ -16,12 +16,24 @@
 
 <div id="app">
 
-    <header-component></header-component>
-    <p v-if="active">{{ message }}</p>
-    <span v-if="!active">This will never change {{* message}}</span>
-    <span>Captain's name: {{ name | capitalize}}</span>
+    <div class="site">
+        <div class="site-hd">
+            <header-component></header-component>
+        </div>
 
-    <button v-on:click="message='Go Away'">Click Me</button>
+        <div class="site-bd">
+            <p v-if="active">{{ message }}</p>
+            <span v-if="!active">This will never change {{* message}}</span>
+            <span>Captain's name: {{ name | capitalize}}</span>
+
+            <button v-on:click="message='Go Away'">Click Me</button>
+        </div>
+
+        <div class="site-ft">
+            <footer-component></footer-component>
+        </div>
+    </div>
+
 
 </div>
 
